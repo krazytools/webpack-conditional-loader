@@ -98,12 +98,14 @@ function commentLine (line) {
 
 module.exports = function (source) {
   try {
-    const sourceByLine = source.split(os.EOL)
+    const sourceByLine = source.split('\n')
     const blocks = searchBlocks(sourceByLine)
     const truthyBlocks = getTruthyBlocks(blocks)
-    const transformedSource = commentCodeInsideBlocks(sourceByLine, truthyBlocks)
-
-    return transformedSource.join('\n')
+    if (truthyBlocks && truthyBlocks.length > 0) {
+      const transformedSource = commentCodeInsideBlocks(sourceByLine, truthyBlocks)
+      return transformedSource.join('\n');
+    }
+    return source;
   } catch (error) {
     console.error(error)
     throw error
