@@ -17,26 +17,29 @@ faster).
 ## Installation
 
 ```bash
-npm install --save-dev webpack-conditional-loader
+# with npm:
+npm install --save-dev forked-webpack-conditional-loader
+# or with yarn:
+yarn add --dev forked-webpack-conditional-loader
 ```
 
 ## Usage
 
 ### In your `webpack.config.js`
 
-Put `webpack-conditional-loader` as the last loader in the array, so it will process the code before
+Put `forked-webpack-conditional-loader` as the last loader in the array, so it will process the code before
 all others.
 
 ```js
 module: {
   rules: [{
     test: /\.js$/,
-    use: ['babel-loader', 'webpack-conditional-loader']
+    loader: ['babel-loader', 'forked-webpack-conditional-loader']
   }]
 }
 ```
 
-Get an example config file [here](https://github.com/caiogondim/webpack-conditional-loader/blob/master/webpack.js)
+Get an example config file [here](https://github.com/krazytools/webpack-conditional-loader/blob/master/webpack.js)
 
 ### On your code
 

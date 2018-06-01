@@ -1,5 +1,5 @@
 {
-  "name": "webpack-conditional-loader",
+  "name": "forked-webpack-conditional-loader",
   "version": "1.0.12",
   "description": "#ifdef for JavaScript",
   "main": "src/index.js",
@@ -24,13 +24,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/caiogondim/webpack-conditional-loader.git"
+    "url": "git+https://github.com/krazytools/webpack-conditional-loader.git"
   },
   "keywords": [],
-  "author": "Caio Gondim",
+  "author": "Lanh Dang",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/caiogondim/webpack-conditional-loader/issues"
+    "url": "https://github.com/krazytools/webpack-conditional-loader/issues"
   },
-  "homepage": "https://github.com/caiogondim/webpack-conditional-loader#readme"
+  "homepage": "https://github.com/krazytools/webpack-conditional-loader#readme"
 }
